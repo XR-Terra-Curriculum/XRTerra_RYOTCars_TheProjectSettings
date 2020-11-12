@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CarShowcaseController : MonoBehaviour
 {
+    public GameObject chosenCar;
+    public GameObject rotateParent;
     public GameObject start;
 
     public static GameObject targetOne;
@@ -24,16 +26,38 @@ public class CarShowcaseController : MonoBehaviour
     public float constantSpeed;
     public float fastSpeed;
 
+    void Start()
+    {
+
+
+
+    }
     void Update()
     {
+        CarRotater();
+        CarRotation();
     }
 
     public void CarRotation()
     {
-        transform.RotateAround(start.transform.position, Vector3.up, constantSpeed*Time.deltaTime);   
+        rotateParent.transform.RotateAround(start.transform.position, Vector3.up, constantSpeed*Time.deltaTime);   
 
     }
-    public void MoveCarToSpot()
+    public void CarRotater()
+    {
+        int n = 0;
+        while(n < 4)
+        {
+            cars[n].transform.Rotate(Vector3.down * Time.deltaTime * 40);
+            n++;
+        }
+
+    }
+    public void DisableRotate()
+    {
+        rotateParent.gameObject.SetActive(false);
+    }
+    public void ChosenCar()
     {
 
     }

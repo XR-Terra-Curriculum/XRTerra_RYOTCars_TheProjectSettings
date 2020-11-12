@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnvironmentController : MonoBehaviour
+public class SkyboxController : MonoBehaviour
 {
 
     public static Material matOne;
