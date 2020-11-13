@@ -21,9 +21,9 @@ public class CarsController : MonoBehaviour
 
   public void ChangeCar(int carNum)
     {
-        foreach (GameObject car in carPrefabs)
+        foreach (Transform child in spawnLocation)
         {
-            GameObject.Destroy(car);
+            GameObject.Destroy(child.gameObject);
         }
         SpawnCar(carNum);
     }
