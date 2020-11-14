@@ -262,6 +262,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShowroomEnvironment
       objectReference: {fileID: 0}
+    - target: {fileID: 2889262531403252804, guid: 01329d564149605419a8c8843121c34c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.061
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01329d564149605419a8c8843121c34c, type: 3}
 --- !u!4 &840410178 stripped
